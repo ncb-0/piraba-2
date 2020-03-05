@@ -83,6 +83,7 @@ img#pira {
 }
 @media (max-width: 600px) {
   #left {
+    position: absolute;
     width: 100px;
     padding: 10px;
   }
