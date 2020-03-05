@@ -1,0 +1,100 @@
+// vars
+$pira-red  = #a20
+$pira-pink = #e6bdb3
+$spec-font = "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif
+// animations
+@keyframes blink
+  0%
+    opacity 0
+  50%
+    opacity 1
+// general
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  user-select none
+  color $pira-red
+  font-feature-settings "ss02"
+::selection
+  background alpha($pira-red,0.2)
+::-webkit-scrollbar
+  display none
+body
+  background #fff
+  // padding 10px
+  // height 100vh
+// font styles
+h2
+  font 500 40px/1 $spec-font
+  letter-spacing -0.3px
+  transform translateX(-0.5px)
+  // margin-bottom 10px
+p
+  font 400 14px/1.2 $spec-font
+  letter-spacing 0.5px
+  margin-bottom 6px
+a
+  text-decoration none
+a::after
+  content "↗"
+a:hover::after
+  animation blink .1s step-end 0s forwards infinite
+h2 a:hover::after
+  content "↗"
+// layout
+#gradient
+  z-index 1
+  position fixed
+  bottom 0
+  height 100px
+  width 100vw
+  background linear-gradient(
+    to top,
+    alpha($pira-pink, 1.000) 0%,
+    alpha($pira-pink, 0.987) 8.1%,
+    alpha($pira-pink, 0.951) 15.5%,
+    alpha($pira-pink, 0.896) 22.5%,
+    alpha($pira-pink, 0.825) 29%,
+    alpha($pira-pink, 0.741) 35.3%,
+    alpha($pira-pink, 0.648) 41.2%,
+    alpha($pira-pink, 0.550) 47.1%,
+    alpha($pira-pink, 0.450) 52.9%,
+    alpha($pira-pink, 0.352) 58.8%,
+    alpha($pira-pink, 0.259) 64.7%,
+    alpha($pira-pink, 0.175) 71%,
+    alpha($pira-pink, 0.104) 77.5%,
+    alpha($pira-pink, 0.049) 84.5%,
+    alpha($pira-pink, 0.013) 91.9%,
+    alpha($pira-pink, 0.000) 100%
+  )
+#left
+  z-index 2
+  padding 10px
+  width 100px
+  position fixed
+  top 0
+img#pira
+  width 100%
+#right
+  z-index 2
+  max-width 700px
+  padding 10px
+  position absolute
+  top 0
+  left 100px
+  width calc(100vw - 100px)
+#sites table
+  width 100%
+  font 400 14px/1.2 $spec-font
+  letter-spacing 0.5px
+  margin-bottom 10px
+  text-align left
+  padding 0
+  border-collapse collapse
+  th, td
+    vertical-align top
+    font-weight 400
+    border-bottom 1px solid $pira-pink
+    padding 2px 0
+    width 50%
