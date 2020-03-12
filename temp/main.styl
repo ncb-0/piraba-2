@@ -2,6 +2,7 @@
 $pira-red  = #a20
 $pira-pink = #e6bdb3
 $spec-font = "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif
+$mega-font = "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif
 // animations
 @keyframes blink
   0%
@@ -26,13 +27,14 @@ body
   // height 100vh
 // font styles
 h2
-  font 500 40px/1 $spec-font
+  font 400 40px/1 $mega-font
   letter-spacing -0.3px
   transform translateX(-0.5px)
   // margin-bottom 10px
-p
-  font 400 14px/1.2 $spec-font
+p, table
+  font 400 14px/1.2 $mega-font
   letter-spacing 0.5px
+p  
   margin-bottom 6px
 a
   text-decoration none
@@ -84,10 +86,8 @@ img#pira
   top 0
   left 100px
   width calc(100vw - 100px)
-#sites table
+table
   width 100%
-  font 400 14px/1.2 $spec-font
-  letter-spacing 0.5px
   margin-bottom 10px
   text-align left
   padding 0

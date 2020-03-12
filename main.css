@@ -16,13 +16,16 @@ body {
   background: #fff;
 }
 h2 {
-  font: 500 40px/1 "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
+  font: 400 40px/1 "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
   letter-spacing: -0.3px;
   transform: translateX(-0.5px);
 }
-p {
-  font: 400 14px/1.2 "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
+p,
+table {
+  font: 400 14px/1.2 "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
   letter-spacing: 0.5px;
+}
+p {
   margin-bottom: 6px;
 }
 a {
@@ -64,17 +67,15 @@ img#pira {
   left: 100px;
   width: calc(100vw - 100px);
 }
-#sites table {
+table {
   width: 100%;
-  font: 400 14px/1.2 "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
-  letter-spacing: 0.5px;
   margin-bottom: 10px;
   text-align: left;
   padding: 0;
   border-collapse: collapse;
 }
-#sites table th,
-#sites table td {
+table th,
+table td {
   vertical-align: top;
   font-weight: 400;
   border-bottom: 1px solid #e6bdb3;
