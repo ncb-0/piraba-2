@@ -1,8 +1,7 @@
 // vars
-$pira-red  = #a20
-$pira-pink = #e6bdb3
-$spec-font = "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif
-$mega-font = "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif
+$pira-red  = #d20
+$pira-pink = #f5cdca
+$mega-font = Mega, system-ui, "Helvetica Neue", "Helvetica", sans-serif
 // animations
 @keyframes blink
   0%
@@ -16,7 +15,7 @@ $mega-font = "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif
   box-sizing border-box
   user-select none
   color $pira-red
-  font-feature-settings "ss02"
+  // font-feature-settings "ss02"
 ::selection
   background alpha($pira-red,0.2)
 ::-webkit-scrollbar
@@ -26,14 +25,10 @@ body
   // padding 10px
   // height 100vh
 // font styles
-h2
-  font 400 40px/1 $mega-font
-  letter-spacing -0.3px
-  transform translateX(-0.5px)
-  // margin-bottom 10px
-p, table
+p, tr, th, td
   font 400 14px/1.2 $mega-font
   letter-spacing 0.5px
+  font-weight 400
 p  
   margin-bottom 6px
 a

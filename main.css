@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
-  color: #a20;
-  font-feature-settings: "ss02";
+  color: #d20;
 }
 ::selection {
-  background: rgba(170,34,0,0.2);
+  background: rgba(221,34,0,0.2);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -15,15 +14,13 @@
 body {
   background: #fff;
 }
-h2 {
-  font: 400 40px/1 "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
-  letter-spacing: -0.3px;
-  transform: translateX(-0.5px);
-}
 p,
-table {
-  font: 400 14px/1.2 "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
+tr,
+th,
+td {
+  font: 400 14px/1.2 Mega, system-ui, "Helvetica Neue", "Helvetica", sans-serif;
   letter-spacing: 0.5px;
+  font-weight: 400;
 }
 p {
   margin-bottom: 6px;
@@ -46,7 +43,7 @@ h2 a:hover::after {
   bottom: 0;
   height: 100px;
   width: 100vw;
-  background: linear-gradient(to top, #e6bdb3 0%, rgba(230,189,179,0.987) 8.1%, rgba(230,189,179,0.951) 15.5%, rgba(230,189,179,0.896) 22.5%, rgba(230,189,179,0.825) 29%, rgba(230,189,179,0.741) 35.3%, rgba(230,189,179,0.648) 41.2%, rgba(230,189,179,0.55) 47.1%, rgba(230,189,179,0.45) 52.9%, rgba(230,189,179,0.352) 58.8%, rgba(230,189,179,0.259) 64.7%, rgba(230,189,179,0.175) 71%, rgba(230,189,179,0.104) 77.5%, rgba(230,189,179,0.049) 84.5%, rgba(230,189,179,0.013) 91.9%, rgba(230,189,179,0) 100%);
+  background: linear-gradient(to top, #f5cdca 0%, rgba(245,205,202,0.987) 8.1%, rgba(245,205,202,0.951) 15.5%, rgba(245,205,202,0.896) 22.5%, rgba(245,205,202,0.825) 29%, rgba(245,205,202,0.741) 35.3%, rgba(245,205,202,0.648) 41.2%, rgba(245,205,202,0.55) 47.1%, rgba(245,205,202,0.45) 52.9%, rgba(245,205,202,0.352) 58.8%, rgba(245,205,202,0.259) 64.7%, rgba(245,205,202,0.175) 71%, rgba(245,205,202,0.104) 77.5%, rgba(245,205,202,0.049) 84.5%, rgba(245,205,202,0.013) 91.9%, rgba(245,205,202,0) 100%);
 }
 #left {
   z-index: 2;
@@ -78,7 +75,7 @@ table th,
 table td {
   vertical-align: top;
   font-weight: 400;
-  border-bottom: 1px solid #e6bdb3;
+  border-bottom: 1px solid #f5cdca;
   padding: 2px 0;
   width: 50%;
 }
