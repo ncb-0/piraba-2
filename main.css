@@ -35,6 +35,9 @@ a:hover::after {
 h2 a:hover::after {
   content: "↗";
 }
+span.greyout {
+  color: #f5cdca;
+}
 #gradient {
   z-index: 1;
   position: fixed;
