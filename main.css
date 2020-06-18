@@ -15,12 +15,10 @@ body {
   background: #fff;
 }
 p,
-tr,
-th,
-td {
-  font: 400 14px/1.2 Mega, system-ui, "Helvetica Neue", "Helvetica", sans-serif;
-  letter-spacing: 0.5px;
-  font-weight: 400;
+table th,
+table td {
+  font: 500 14px/16px "Mega", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
+  letter-spacing: 0.35px;
 }
 p {
   margin-bottom: 6px;
@@ -74,7 +72,6 @@ table {
 table th,
 table td {
   vertical-align: top;
-  font-weight: 400;
   border-bottom: 1px solid #f5cdca;
   padding: 2px 0;
   width: 50%;
@@ -90,6 +87,12 @@ table td {
     top: 110px;
     padding: 10px;
     width: 100vw;
+  }
+}
+@media (max-width: 460px) {
+  td.user,
+  th.user {
+    display: none;
   }
 }
 @-moz-keyframes blink {
